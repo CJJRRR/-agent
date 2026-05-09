@@ -1,0 +1,136 @@
+project:
+  name: "AI Coding Tools Market Watch"
+  timezone: "Asia/Shanghai"
+  output_dir: "reports"
+  database_path: "data/intel.db"
+
+run:
+  max_items_per_source: 20
+  request_timeout_seconds: 20
+  user_agent: "CompetitorIntelAgent/1.0 (+https://example.com/research)"
+
+classification:
+  categories:
+    product:
+      - launch
+      - feature
+      - beta
+      - release
+      - integration
+      - workflow
+      - 产品
+      - 功能
+      - 发布
+      - 集成
+    pricing:
+      - pricing
+      - price
+      - plan
+      - subscription
+      - enterprise
+      - discount
+      - 价格
+      - 订阅
+      - 套餐
+      - 企业版
+    hiring:
+      - hiring
+      - job
+      - careers
+      - engineer
+      - product manager
+      - sales
+      - 招聘
+      - 岗位
+      - 工程师
+      - 销售
+    funding:
+      - funding
+      - raised
+      - series
+      - valuation
+      - investor
+      - 融资
+      - 投资
+      - 估值
+    partnership:
+      - partner
+      - partnership
+      - ecosystem
+      - marketplace
+      - 合作
+      - 生态
+      - 市场
+    technical:
+      - model
+      - api
+      - latency
+      - benchmark
+      - architecture
+      - security
+      - 模型
+      - 接口
+      - 延迟
+      - 安全
+    market:
+      - customer
+      - case study
+      - adoption
+      - region
+      - expansion
+      - 客户
+      - 案例
+      - 扩张
+
+impact:
+  high_keywords:
+    - launch
+    - pricing
+    - enterprise
+    - funding
+    - partnership
+    - security
+    - release
+    - 发布
+    - 价格
+    - 企业版
+    - 融资
+    - 合作
+  medium_keywords:
+    - beta
+    - integration
+    - hiring
+    - benchmark
+    - customer
+    - 招聘
+    - 集成
+    - 客户
+    - 测试版
+
+competitors:
+  - name: "OpenAI"
+    description: "AI models, ChatGPT, developer platform"
+    sources:
+      - type: "rss"
+        name: "OpenAI News"
+        url: "https://openai.com/news/rss.xml"
+
+  - name: "Anthropic"
+    description: "Claude and enterprise AI platform"
+    sources:
+      - type: "website"
+        name: "Anthropic News"
+        url: "https://www.anthropic.com/news"
+      - type: "jobs"
+        name: "Anthropic Careers"
+        url: "https://www.anthropic.com/careers"
+
+  - name: "Hugging Face"
+    description: "Open-source AI model and developer platform"
+    sources:
+      - type: "rss"
+        name: "Hugging Face Blog"
+        url: "https://huggingface.co/blog/feed.xml"
+      - type: "website"
+        name: "Hugging Face Pricing"
+        url: "https://huggingface.co/pricing"

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "competitor-intel-agent"
+version = "1.0.0"
+description = "Competitor and industry intelligence agent"
+requires-python = ">=3.9"
+dependencies = [
+  "beautifulsoup4==4.12.3",
+  "feedparser==6.0.11",
+  "openai==1.59.7",
+  "PyYAML==6.0.2",
+  "requests==2.32.3",
+  "schedule==1.2.2",
+]
+
+[project.scripts]
+competitor-intel = "competitor_intel.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["competitor_intel*"]
